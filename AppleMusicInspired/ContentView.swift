@@ -22,3 +22,22 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+// play.fill
+// forward.fill
+// play.square.stack.fill
+// dot.radiowaves.left.and.right
+// music.note
+// magnifyingglass
+
+//music.note.list
+// music.mic
+// square.stack
+// music.note
+// tv
+// music.note.tv
+// guitars
+//person.2.crop.square.stack
+// music.quarternote.3 авторы
+//arrow.down.circle
+
+//line.3.horizontal
