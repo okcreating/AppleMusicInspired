@@ -9,7 +9,6 @@ import SwiftUI
 
 struct LibraryView: View {
     var body: some View {
-        TabBarView()
         NavigationView(content: {
            // NavigationLink(destination: Text("Destination")) {
                 VStack {
@@ -23,19 +22,19 @@ struct LibraryView: View {
                     Text("The best way to enjoy all the songs you already have and all the ones you want.")
                         .font(.title3)
                 }
-
+                .padding()
                 .foregroundColor(Color(hue: 1.0, saturation: 0.078, brightness: 0.252))
                 .navigationTitle("Library")
 
-                .navigationBarItem(
-                    trailing: NavigationLink("Edit", destination: ListView())
+                .navigationBarItems(
+                    trailing: NavigationLink("Edit", destination: ListView()))
 
-            }
-                    }
+        })
+       // TabBarView()
+    }
 
-        .padding()
+}
 
-        }
 
 
 
