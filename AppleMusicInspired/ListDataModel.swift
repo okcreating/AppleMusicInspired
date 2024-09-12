@@ -28,5 +28,5 @@ struct CellContent: Identifiable {
 }
 
 
-let pointNames = ["Playlists", "Artists", "Albums", "Songs", "Music Videos", "Genres", "Compilations", "Composers", "Downloaded music"]
-let symbolNames = ["music.note.list", "music.mic", "square.stack", "music.note", "music.note.tv", "guitars", "music.quarternote.3", "person.2.crop.square.stack", "arrow.down.circle"]
+//let pointNames = ["Playlists", "Artists", "Albums", "Songs", "Music Videos", "Genres", "Compilations", "Composers", "Downloaded music"]
+//let symbolNames = ["music.note.list", "music.mic", "square.stack", "music.note", "music.note.tv", "guitars", "music.quarternote.3", "person.2.crop.square.stack", "arrow.down.circle"]

@@ -9,25 +9,19 @@ import SwiftUI
 
 struct ListView: View {
 
-
- 
+    @State private var multiselection = Set<UUID>()
 
     var body: some View {
-        NavigationView(content: {
-            List { ForEach
-                HStack {
-                    Image("")
-                    Text(
-                    Image(systemName: "line.3.horizontal")
-                }
+        NavigationView {
+            List {
+
             }
             .foregroundColor(Color(hue: 1.0, saturation: 0.078, brightness: 0.252))
             .navigationTitle("Library")
             .navigationBarItems(
                 trailing: NavigationLink("Done", destination: TabBarView()))
             .listStyle
-
-        })
+        }
 
 
 
