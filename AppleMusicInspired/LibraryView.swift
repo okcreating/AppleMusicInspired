@@ -10,8 +10,10 @@ import SwiftUI
 struct LibraryView: View {
     var body: some View {
         NavigationView(content: {
+
            // NavigationLink(destination: Text("Destination")) {
                 VStack {
+                    Spacer()
                     Image("tunes")
                         .resizable()
                         .frame(width: 60, height: 60)
@@ -21,16 +23,16 @@ struct LibraryView: View {
                         .padding()
                     Text("The best way to enjoy all the songs you already have and all the ones you want.")
                         .font(.title3)
+                    Spacer()
+                    PlayingView()
+                        //.padding()
                 }
-                .padding()
                 .foregroundColor(Color(hue: 1.0, saturation: 0.078, brightness: 0.252))
                 .navigationTitle("Library")
-
                 .navigationBarItems(
                     trailing: NavigationLink("Edit", destination: ListView()))
 
         })
-       // TabBarView()
     }
 
 }
