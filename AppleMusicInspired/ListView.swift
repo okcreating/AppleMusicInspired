@@ -8,10 +8,37 @@
 import SwiftUI
 
 struct ListView: View {
+
+
+ 
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView(content: {
+            List { ForEach
+                HStack {
+                    Image("")
+                    Text(
+                    Image(systemName: "line.3.horizontal")
+                }
+            }
+            .foregroundColor(Color(hue: 1.0, saturation: 0.078, brightness: 0.252))
+            .navigationTitle("Library")
+            .navigationBarItems(
+                trailing: NavigationLink("Done", destination: TabBarView()))
+            .listStyle
+
+        })
+
+
+
+
+           PlayingView()
+            //TabBarView()
+                }
+
     }
-}
+
+
 
 #Preview {
     ListView()

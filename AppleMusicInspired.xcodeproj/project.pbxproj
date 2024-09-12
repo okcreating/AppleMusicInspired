@@ -14,6 +14,7 @@
 		C63CA72B2C8B286800E994E4 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63CA72A2C8B286800E994E4 /* LibraryView.swift */; };
 		C63CA72D2C8B286900E994E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63CA72C2C8B286900E994E4 /* Assets.xcassets */; };
 		C63CA7302C8B286900E994E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63CA72F2C8B286900E994E4 /* Preview Assets.xcassets */; };
+		C63F60642C93772B00D6A29F /* ListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F60632C93772B00D6A29F /* ListDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		C63CA72A2C8B286800E994E4 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		C63CA72C2C8B286900E994E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C63CA72F2C8B286900E994E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C63F60632C93772B00D6A29F /* ListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				C63CA72A2C8B286800E994E4 /* LibraryView.swift */,
 				C63A5A932C924DE2004518D4 /* PlayingView.swift */,
 				C63A5A912C92447C004518D4 /* ListView.swift */,
+				C63F60632C93772B00D6A29F /* ListDataModel.swift */,
 				C63A5A8F2C923C15004518D4 /* TabBarView.swift */,
 				C63CA72C2C8B286900E994E4 /* Assets.xcassets */,
 				C63CA72E2C8B286900E994E4 /* Preview Content */,
@@ -149,6 +152,7 @@
 				C63A5A922C92447C004518D4 /* ListView.swift in Sources */,
 				C63CA72B2C8B286800E994E4 /* LibraryView.swift in Sources */,
 				C63A5A942C924DE2004518D4 /* PlayingView.swift in Sources */,
+				C63F60642C93772B00D6A29F /* ListDataModel.swift in Sources */,
 				C63A5A902C923C15004518D4 /* TabBarView.swift in Sources */,
 				C63CA7292C8B286800E994E4 /* AppleMusicInspiredApp.swift in Sources */,
 			);
