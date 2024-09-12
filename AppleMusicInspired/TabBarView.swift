@@ -27,6 +27,7 @@ struct TabBarView: View {
             }
         }
         .accentColor(.red)
+       
     }
 }
 

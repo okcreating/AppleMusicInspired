@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C63A5A902C923C15004518D4 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A5A8F2C923C15004518D4 /* TabBarView.swift */; };
 		C63A5A922C92447C004518D4 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A5A912C92447C004518D4 /* ListView.swift */; };
+		C63A5A942C924DE2004518D4 /* PlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63A5A932C924DE2004518D4 /* PlayingView.swift */; };
 		C63CA7292C8B286800E994E4 /* AppleMusicInspiredApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63CA7282C8B286800E994E4 /* AppleMusicInspiredApp.swift */; };
 		C63CA72B2C8B286800E994E4 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63CA72A2C8B286800E994E4 /* LibraryView.swift */; };
 		C63CA72D2C8B286900E994E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63CA72C2C8B286900E994E4 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		C63A5A8F2C923C15004518D4 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		C63A5A912C92447C004518D4 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		C63A5A932C924DE2004518D4 /* PlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingView.swift; sourceTree = "<group>"; };
 		C63CA7252C8B286800E994E4 /* AppleMusicInspired.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusicInspired.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63CA7282C8B286800E994E4 /* AppleMusicInspiredApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicInspiredApp.swift; sourceTree = "<group>"; };
 		C63CA72A2C8B286800E994E4 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 			children = (
 				C63CA7282C8B286800E994E4 /* AppleMusicInspiredApp.swift */,
 				C63CA72A2C8B286800E994E4 /* LibraryView.swift */,
+				C63A5A932C924DE2004518D4 /* PlayingView.swift */,
 				C63A5A912C92447C004518D4 /* ListView.swift */,
 				C63A5A8F2C923C15004518D4 /* TabBarView.swift */,
 				C63CA72C2C8B286900E994E4 /* Assets.xcassets */,
@@ -145,6 +148,7 @@
 			files = (
 				C63A5A922C92447C004518D4 /* ListView.swift in Sources */,
 				C63CA72B2C8B286800E994E4 /* LibraryView.swift in Sources */,
+				C63A5A942C924DE2004518D4 /* PlayingView.swift in Sources */,
 				C63A5A902C923C15004518D4 /* TabBarView.swift in Sources */,
 				C63CA7292C8B286800E994E4 /* AppleMusicInspiredApp.swift in Sources */,
 			);
