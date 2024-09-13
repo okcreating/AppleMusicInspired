@@ -10,19 +10,32 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
         TabView {
-            Tab("Library", systemImage: "play.square.stack.fill") {
+            NavigationStack() {
                 LibraryView()
+                PlayingView()
             }
             .tabItem {
-                Image(systemName: )
-                Text()
+                Image(systemName: "play.square.stack.fill")
+                Text("Library")
             }
-            Text("Radio will be appeared here")
+            NavigationStack() {
+                Spacer()
+                Text("Radio will be appeared here")
+                    .navigationTitle("Radio")
+                Spacer()
+                PlayingView()
+            }
             .tabItem {
                 Image(systemName: "dot.radiowaves.left.and.right")
                 Text("Radio")
             }
-            Text("Search will be appeared here")
+            NavigationStack() {
+                Spacer()
+                Text("Search will be appeared here")
+                    .navigationTitle("Search")
+                Spacer()
+                PlayingView()
+            }
             .tabItem {
                 Image(systemName: "magnifyingglass")
                 Text("Search")
