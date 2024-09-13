@@ -14,7 +14,7 @@ struct ListView: View {
     @State private var isEditMode: EditMode = .active
 
     var body: some View {
-        NavigationView {
+
             List(selection: $multiselection) {
                 ForEach(cellsContent) { cell in
                     CellView(cell: cell)
@@ -23,20 +23,14 @@ struct ListView: View {
             }
             .foregroundColor(Color(hue: 1.0, saturation: 0.078, brightness: 0.252))
             .navigationTitle("Library")
-            .navigationBarItems(
-                trailing: NavigationLink("Done", destination: LibraryView()))
-//            .listStyle(.inset)
-            .toolbar {  }
+           // .navigationBarItems(
+            //    trailing: NavigationLink("Done", destination: TabBarView()))
+            .listStyle(.inset)
+           .toolbar { EditButton() }
             .environment(\.editMode, self.$isEditMode)
-
-
         }
-
-
-       TabBarView()
     }
 
-}
 
 
 
