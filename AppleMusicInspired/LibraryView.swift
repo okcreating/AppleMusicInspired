@@ -25,7 +25,8 @@ struct LibraryView: View {
                         .font(.title3)
                     Spacer()
                     PlayingView()
-                        //.padding()
+                        .padding()
+                    TabBarView()
                 }
                 .foregroundColor(Color(hue: 1.0, saturation: 0.078, brightness: 0.252))
                 .navigationTitle("Library")
@@ -34,31 +35,8 @@ struct LibraryView: View {
 
         })
     }
-
 }
-
-
-
 
 #Preview {
     LibraryView()
 }
-// play.fill
-// forward.fill
-// play.square.stack.fill
-// dot.radiowaves.left.and.right
-// music.note
-// magnifyingglass
-
-//music.note.list
-// music.mic
-// square.stack
-// music.note
-// tv
-// music.note.tv
-// guitars
-//person.2.crop.square.stack
-// music.quarternote.3 авторы
-//arrow.down.circle
-
-//line.3.horizontal

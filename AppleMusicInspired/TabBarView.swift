@@ -10,10 +10,12 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
         TabView {
-            LibraryView()
+            Tab("Library", systemImage: "play.square.stack.fill") {
+                LibraryView()
+            }
             .tabItem {
-                Image(systemName: "play.square.stack.fill")
-                Text("Library")
+                Image(systemName: )
+                Text()
             }
             Text("Radio will be appeared here")
             .tabItem {

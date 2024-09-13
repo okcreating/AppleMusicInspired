@@ -8,10 +8,37 @@
 import SwiftUI
 
 struct ListView: View {
+
+    @State private var cellsContent = CellContent.libraryPoints()
+    @State private var multiselection = Set<UUID>()
+    @State private var isEditMode: EditMode = .active
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(selection: $multiselection) {
+                ForEach(cellsContent) { cell in
+                    CellView(cell: cell)
+                }
+                .onMove { cellsContent.move(fromOffsets: $0, toOffset: $1) }
+            }
+            .foregroundColor(Color(hue: 1.0, saturation: 0.078, brightness: 0.252))
+            .navigationTitle("Library")
+            .navigationBarItems(
+                trailing: NavigationLink("Done", destination: LibraryView()))
+//            .listStyle(.inset)
+            .toolbar {  }
+            .environment(\.editMode, self.$isEditMode)
+
+
+        }
+
+
+       TabBarView()
     }
+
 }
+
+
 
 #Preview {
     ListView()
