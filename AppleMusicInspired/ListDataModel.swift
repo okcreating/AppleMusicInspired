@@ -7,14 +7,18 @@
 
 import SwiftUI
 
-struct CellContent: Identifiable {
+struct CellContent: Identifiable, Hashable {
     let id = UUID()
     var icon: Image
     var name: String
     var isSelected: Bool
-    var threeLines = Image(systemName: "line.3.horizontal")
+    //var threeLines = Image(systemName: "line.3.horizontal")
 
-    static func libraryPoints() -> [CellContent] {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+   static func libraryPoints() -> [CellContent] {
         return [CellContent(icon: Image(systemName: "music.note.list"), name: "Playlists", isSelected: true),
                 CellContent(icon: Image(systemName: "music.mic"), name: "Artists", isSelected: true),
                 CellContent(icon: Image(systemName: "square.stack"), name: "Albums", isSelected: false),

@@ -14,10 +14,16 @@ struct CellView: View {
     var body: some View {
         HStack {
             cell.icon
+                .foregroundColor(.red)
+                
+                     .scaledToFit()
+                     .frame(width: 24, height: 24)
             Text(cell.name)
-                .font(.title)
-            Spacer()
-            cell.threeLines
+                .font(.subheadline)
+//            Spacer()
+//            cell.threeLines
+//                .tint(.gray)
+
         }
     }
 }
