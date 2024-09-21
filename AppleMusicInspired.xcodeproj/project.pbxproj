@@ -71,6 +71,7 @@
 				C63A5A8F2C923C15004518D4 /* TabBarView.swift */,
 				C63A5A932C924DE2004518D4 /* PlayingView.swift */,
 				C66291B72C9E14FD0076277C /* LibraryScreen */,
+				C66291B82C9E155F0076277C /* RadioScreen */,
 				C63CA72C2C8B286900E994E4 /* Assets.xcassets */,
 				C63CA72E2C8B286900E994E4 /* Preview Content */,
 			);
@@ -92,7 +93,6 @@
 				C63A5A912C92447C004518D4 /* ListView.swift */,
 				C63F60652C938E1200D6A29F /* CellView.swift */,
 				C63F60632C93772B00D6A29F /* ListDataModel.swift */,
-				C66291B82C9E155F0076277C /* RadioScreen */,
 			);
 			path = LibraryScreen;
 			sourceTree = "<group>";
