@@ -24,12 +24,17 @@ struct RadioshowCell: View {
                 .foregroundStyle(.gray)
                 .padding()
             cell.image
-                .scaledToFill()
-                .frame(width: .infinity - 60, height: 200)
+                .resizable()
+                .scaledToFit()
+                .frame(width: 250, height: 80)
         }
     }
 }
 
-#Preview {
-    RadioshowCell()
-}
+//struct Show_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RadioshowCell(cell: CellView)
+//    }
+//
+//
+//}

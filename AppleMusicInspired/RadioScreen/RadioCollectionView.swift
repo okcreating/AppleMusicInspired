@@ -17,15 +17,17 @@ struct RadioCollectionView: View {
 
     var body: some View {
         ScrollView(.vertical) {
-            LazyHGrid(rows: [GridItem(.flexible())]) {
+            ScrollView(.horizontal) {
+                LazyHGrid(rows: [GridItem(.flexible())]) {
                 ForEach(shoswContent) { content in
                     RadioshowCell(cell: content)
                 }
             }
+        }
 
-                Divider()
+            Divider()
                     .padding()
-                Text("Radio Stations")
+            Text("Radio Stations")
 
             LazyVGrid(columns: [GridItem(.flexible())]) {
                 ForEach(stationsContent) { content in
