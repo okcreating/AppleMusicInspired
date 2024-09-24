@@ -19,10 +19,7 @@ struct TabBarView: View {
                 Text("Library")
             }
             NavigationStack() {
-                Spacer()
-                Text("Radio will be appeared here")
-                    .navigationTitle("Radio")
-                Spacer()
+                RadioCollectionView()
                 PlayingView()
             }
             .tabItem {
