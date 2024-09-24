@@ -22,16 +22,23 @@ struct RadioCollectionView: View {
             }
         }
             Divider()
-                .padding()
-            Text("Radio Stations")
-                .font(.title)
-                .fontWeight(.bold)
+                 .padding()
+            HStack(content: {
+                Text("Radio Stations")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .padding(20)
+                Spacer()
+            })
+
+
 
             LazyVGrid(columns: [GridItem(.flexible())]) {
                 ForEach(stationsContent) { content in
                     RadioStationCell(cell: content)
                 }
             }
+            
         }
         .navigationTitle("Radio")
     }

@@ -13,9 +13,10 @@ struct RadioStationCell: View {
     
     var body: some View {
         HStack {
+
             cell.image
                 .resizable()
-                .scaledToFill()
+
                 .frame(width: 100, height: 100)
                 .padding()
             VStack(alignment: .leading) {
@@ -27,6 +28,7 @@ struct RadioStationCell: View {
                     .font(.caption)
             }
         }
+    
     }
 }
 
