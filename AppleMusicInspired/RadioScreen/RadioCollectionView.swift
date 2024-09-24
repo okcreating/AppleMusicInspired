@@ -12,22 +12,20 @@ struct RadioCollectionView: View {
 
     @State private var stationsContent = CollectionContent.radioStationPoints()
 
-//    var rows = [GridItem(.fixed(CGFloat(shoswContent.count)))]
-//    var columns = [GridItem(.fixed(CGFloat(stationsContent.count)))]
-
     var body: some View {
-        ScrollView(.vertical) {
-            ScrollView(.horizontal) {
+        ScrollView(.vertical, showsIndicators: false) {
+            ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: [GridItem(.flexible())]) {
                 ForEach(shoswContent) { content in
                     RadioshowCell(cell: content)
                 }
             }
         }
-
             Divider()
-                    .padding()
+                .padding()
             Text("Radio Stations")
+                .font(.title)
+                .fontWeight(.bold)
 
             LazyVGrid(columns: [GridItem(.flexible())]) {
                 ForEach(stationsContent) { content in

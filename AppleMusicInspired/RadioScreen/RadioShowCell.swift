@@ -12,21 +12,25 @@ struct RadioshowCell: View {
     let cell: CollectionContent
 
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 7) {
+            
             Text(cell.textMark ?? "")
+                .frame(alignment: .leading)
                 .font(.caption)
                 .foregroundStyle(.gray)
                 .textCase(.uppercase)
             Text(cell.name)
-                .font(.title)
+                .frame(alignment: .leading)
+                .font(.headline)
             Text(cell.description)
+                .frame(alignment: .leading)
                 .font(.caption)
                 .foregroundStyle(.gray)
-                .padding()
             cell.image
                 .resizable()
                 .scaledToFit()
-                .frame(width: 250, height: 80)
+               .frame(width: 350, height: 200)
+
         }
     }
 }

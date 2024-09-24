@@ -16,11 +16,12 @@ struct RadioStationCell: View {
             cell.image
                 .resizable()
                 .scaledToFill()
-                .frame(width: 60, height: 60)
+                .frame(width: 100, height: 100)
                 .padding()
-            VStack {
+            VStack(alignment: .leading) {
+
                 Text(cell.name)
-                    .font(.title)
+                    .font(.headline)
                 Text(cell.description)
                     .foregroundStyle(.gray)
                     .font(.caption)
