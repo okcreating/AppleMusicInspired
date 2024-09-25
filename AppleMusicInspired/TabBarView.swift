@@ -10,6 +10,7 @@ import SwiftUI
 struct TabBarView: View {
     var body: some View {
         TabView {
+
             NavigationStack() {
                 LibraryView()
                 PlayingView()
@@ -18,14 +19,16 @@ struct TabBarView: View {
                 Image(systemName: "play.square.stack.fill")
                 Text("Library")
             }
+
             NavigationStack() {
                 RadioCollectionView()
-                PlayingView()
+                    .overlay( PlayingView(), alignment: .bottom)
             }
             .tabItem {
                 Image(systemName: "dot.radiowaves.left.and.right")
                 Text("Radio")
             }
+
             NavigationStack() {
                 Spacer()
                 Text("Search will be appeared here")
@@ -38,8 +41,8 @@ struct TabBarView: View {
                 Text("Search")
             }
         }
+
         .accentColor(.red)
-       
     }
 }
 

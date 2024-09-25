@@ -24,7 +24,7 @@ struct CollectionContent: Identifiable, Hashable {
         return [CollectionContent(image: Image("show1"), textMark: "Fresh wind", name: "Cool Music", description: "You don't even need an actual radio"),
                 CollectionContent(image: Image("show2"), textMark: "Exlusive", name: "The road to rock", description: "Wednesday’s 9-11pm on Hot Radio"),
                 CollectionContent(image: Image("show3"), textMark: "Guest Mix", name: "Bustian Bux", description: "Get ready for a journey"),
-                CollectionContent(image: Image("show4"), name: "Bustian Bux", description: "Get ready for a journey"),
+                CollectionContent(image: Image("show4"), textMark: "Live", name: "The Saturday Light Brigade", description: "On SLB Radio"),
                 CollectionContent(image: Image("show5"), textMark: "Kids", name: "CBeebies BBC", description: "Listening activities for kids")]
     }
 
