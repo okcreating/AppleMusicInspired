@@ -27,18 +27,16 @@ struct RadioCollectionView: View {
                 Text("Radio Stations")
                     .font(.title)
                     .fontWeight(.bold)
-                    .padding(20)
+                    .padding(15)
                 Spacer()
             })
 
-
-
-            LazyVGrid(columns: [GridItem(.flexible())]) {
+            LazyVGrid(columns: [GridItem(.flexible(), alignment: .leading)]) {
                 ForEach(stationsContent) { content in
                     RadioStationCell(cell: content)
                 }
             }
-            
+          
         }
         .navigationTitle("Radio")
     }

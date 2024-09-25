@@ -10,8 +10,8 @@ import SwiftUI
 struct PlayingView: View {
     var body: some View {
         HStack {
-            GeometryReader { proxy in
-                let size = proxy.size
+            GeometryReader { _ in
+              //  let size = proxy.size
 
                 Image("ThisTown")
                     .resizable()
@@ -21,26 +21,19 @@ struct PlayingView: View {
             }
 
             Animation(text: "Kygo - This Town feat. Sasha Sloan & Gucci Mane", font: .systemFont(ofSize: 16, weight: .regular))
-                //                .lineLimit(1)
-                //                .truncationMode(.tail)
                 .frame(width: 230)
             Image(systemName: "play.fill")
             Image(systemName: "forward.fill")
                     .padding(10)
-
         }
-
         .frame(height: 80)
-        .background(Color(hue: 1.0, saturation: 0.005, brightness: 0.875))
-        .padding(.bottom)
+        .background(.ultraThinMaterial)
     }
 }
-
 
 #Preview {
     PlayingView()
 }
-
 
 struct Animation: View {
     @State var text: String

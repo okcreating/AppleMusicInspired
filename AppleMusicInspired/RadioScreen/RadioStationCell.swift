@@ -16,11 +16,10 @@ struct RadioStationCell: View {
 
             cell.image
                 .resizable()
-
                 .frame(width: 100, height: 100)
                 .padding()
-            VStack(alignment: .leading) {
 
+            VStack(alignment: .leading) {
                 Text(cell.name)
                     .font(.headline)
                 Text(cell.description)
@@ -28,7 +27,6 @@ struct RadioStationCell: View {
                     .font(.caption)
             }
         }
-    
     }
 }
 

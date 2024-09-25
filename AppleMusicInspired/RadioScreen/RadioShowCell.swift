@@ -28,10 +28,11 @@ struct RadioshowCell: View {
                 .foregroundStyle(.gray)
             cell.image
                 .resizable()
-                .scaledToFit()
-               .frame(width: 350, height: 200)
-
+                //.scaledToFit()
+                .frame(width: 370, height: 220, alignment: .leading)
         }
+        .frame(width: 370)
+        .padding()
     }
 }
 
