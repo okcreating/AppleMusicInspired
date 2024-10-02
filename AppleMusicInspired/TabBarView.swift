@@ -43,7 +43,7 @@ struct TabBarView: View {
         }
 
         .accentColor(.red)
-    }
+    }  
 }
 
 #Preview {

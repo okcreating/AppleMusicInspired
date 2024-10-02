@@ -74,6 +74,7 @@
 				C63A5A932C924DE2004518D4 /* PlayingView.swift */,
 				C66291B72C9E14FD0076277C /* LibraryScreen */,
 				C66291B82C9E155F0076277C /* RadioScreen */,
+				C64F12B92CAD4FA900F02C87 /* Search */,
 				C63CA72C2C8B286900E994E4 /* Assets.xcassets */,
 				C63CA72E2C8B286900E994E4 /* Preview Content */,
 			);
@@ -86,6 +87,13 @@
 				C63CA72F2C8B286900E994E4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C64F12B92CAD4FA900F02C87 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		C66291B72C9E14FD0076277C /* LibraryScreen */ = {
