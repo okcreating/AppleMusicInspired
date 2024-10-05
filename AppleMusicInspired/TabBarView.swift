@@ -31,7 +31,7 @@ struct TabBarView: View {
 
             NavigationStack() {
                 Spacer()
-                Text("Search will be appeared here")
+                SearchView()
                     .navigationTitle("Search")
                 Spacer()
                 PlayingView()
