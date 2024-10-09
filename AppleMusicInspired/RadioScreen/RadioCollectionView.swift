@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RadioCollectionView: View {
-    @State private var shoswContent = CollectionContent.radioShowPoints()
+    @State private var showsContent = CollectionContent.radioShowPoints()
 
     @State private var stationsContent = CollectionContent.radioStationPoints()
 
@@ -16,7 +16,7 @@ struct RadioCollectionView: View {
         ScrollView(.vertical, showsIndicators: false) {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: [GridItem(.flexible())]) {
-                ForEach(shoswContent) { content in
+                ForEach(showsContent) { content in
                     RadioshowCell(cell: content)
                 }
             }

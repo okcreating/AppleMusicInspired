@@ -15,10 +15,16 @@ struct CategoryCell: View {
         ZStack(alignment: .bottomLeading) {
             cell.image
                 .resizable()
-                .frame(width: .infinity/2.2, height: 180)
+                .frame(width: .infinity/2.2, height: 140)
                 .cornerRadius(3)
+                .padding(.leading, 5)
            Text(cell.name)
-                .backgroundStyle(.white)
+                .foregroundStyle(.white)
+                .font(.title3)
+                .fontWeight(.bold)
+                .shadow(color: .black, radius: 1)
+                .padding(.leading)
+                .padding(.bottom, 7)
         }
     }
 }

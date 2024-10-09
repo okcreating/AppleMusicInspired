@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct AppleMusicInspiredApp: App {
+    @State private var categoriesContent = CategoriesContent()
+    
     var body: some Scene {
         WindowGroup {
            TabBarView()
+                .environment(categoriesContent)
         }
     }
 }
