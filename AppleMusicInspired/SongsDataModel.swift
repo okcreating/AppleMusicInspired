@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import Observation
 
-enum CategoryName: String, CodingKey {
+enum CategoryName: String {
     case gold = "Gold Collection"
     case romantic = "Romantic"
     case releases = "Releases"

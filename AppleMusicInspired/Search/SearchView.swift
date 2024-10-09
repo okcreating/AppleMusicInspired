@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import Observation
 
 struct SearchView: View {
     @State private var value: String = ""
     @Environment(CategoriesContent.self) var categoriesContent
 
     var body: some View {
-        ScrollView(.vertical) {
+
             HStack {
                 Image(systemName: "magnifyingglass")
                     .backgroundStyle(.gray)
@@ -24,16 +25,28 @@ struct SearchView: View {
                 .stroke( Color.gray, lineWidth: 0.5))
             .padding()
 
-            LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], content: {
-                ForEach(categoriesContent.categories, id: \.self) { content in
-                   // NavigationLink(content.name) {
-                        CategoryCell(cell: content)
-                    }
-            })
-        }
-    }
+     //  ScrollView(.vertical, showsIndicators: false) {
+            NavigationSplitView {
+                LazyVGrid(columns: [GridItem(.fixed(200)), GridItem(.fixed(200))]) {
+                    ForEach(categoriesContent.categories, id: \.self) { content in
 
-}
+                        NavigationLink {
+                            CategoryDetailView()
+                        } label: {
+                            CategoryCell(cell: content)
+                        }
+                    }
+                }
+                Spacer()
+            } detail: {
+                Text("fhfh")
+            }
+            .padding(5)
+//        }
+//        .ignoresSafeArea()
+        }
+   }
+
 
 
 #Preview {
