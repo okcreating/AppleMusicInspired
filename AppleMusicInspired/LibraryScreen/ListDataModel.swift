@@ -12,7 +12,6 @@ struct CellContent: Identifiable, Hashable {
     var icon: Image
     var name: String
     var isSelected: Bool
-    //var threeLines = Image(systemName: "line.3.horizontal")
 
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
@@ -30,7 +29,3 @@ struct CellContent: Identifiable, Hashable {
                 CellContent(icon: Image(systemName: "arrow.down.circle"), name: "Downloaded music", isSelected: true)]
     }
 }
-
-
-//let pointNames = ["Playlists", "Artists", "Albums", "Songs", "Music Videos", "Genres", "Compilations", "Composers", "Downloaded music"]
-//let symbolNames = ["music.note.list", "music.mic", "square.stack", "music.note", "music.note.tv", "guitars", "music.quarternote.3", "person.2.crop.square.stack", "arrow.down.circle"]
