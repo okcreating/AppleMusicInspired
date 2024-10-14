@@ -14,6 +14,11 @@ struct AverageColor {
 
 extension AverageColor {
 
+    static func generate(from image: UIImage) throws -> AverageColor {
+            let baseColor = try getAverage(from: image)
+            return AverageColor(averageColor: Color(uiColor: baseColor))
+    }
+
     private static func isLight(_ color: UIColor) -> Bool {
         var white: CGFloat = 0
         var alpha: CGFloat = 0
