@@ -16,6 +16,7 @@
 		C63CA7302C8B286900E994E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C63CA72F2C8B286900E994E4 /* Preview Assets.xcassets */; };
 		C63F60642C93772B00D6A29F /* ListDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F60632C93772B00D6A29F /* ListDataModel.swift */; };
 		C63F60662C938E1200D6A29F /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F60652C938E1200D6A29F /* CellView.swift */; };
+		C6429E3D2CBD98A800DFDE03 /* AverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6429E3C2CBD98A800DFDE03 /* AverageColor.swift */; };
 		C64D22ED2CB7061F0048F3BD /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D22EC2CB7061F0048F3BD /* CategoryDetailView.swift */; };
 		C64F12BB2CAD58F300F02C87 /* FullScreenPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F12BA2CAD58F300F02C87 /* FullScreenPlayerView.swift */; };
 		C64F12BD2CAD5DBA00F02C87 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F12BC2CAD5DBA00F02C87 /* SongCell.swift */; };
@@ -39,6 +40,7 @@
 		C63CA72F2C8B286900E994E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C63F60632C93772B00D6A29F /* ListDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataModel.swift; sourceTree = "<group>"; };
 		C63F60652C938E1200D6A29F /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		C6429E3C2CBD98A800DFDE03 /* AverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageColor.swift; sourceTree = "<group>"; };
 		C64D22EC2CB7061F0048F3BD /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		C64F12BA2CAD58F300F02C87 /* FullScreenPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FullScreenPlayerView.swift; path = AppleMusicInspired/FullScreenPlayerView.swift; sourceTree = SOURCE_ROOT; };
 		C64F12BC2CAD5DBA00F02C87 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				C63CA7282C8B286800E994E4 /* AppleMusicInspiredApp.swift */,
 				C63A5A8F2C923C15004518D4 /* TabBarView.swift */,
+				C6429E3C2CBD98A800DFDE03 /* AverageColor.swift */,
 				C63A5A932C924DE2004518D4 /* PlayingView.swift */,
 				C64F12BA2CAD58F300F02C87 /* FullScreenPlayerView.swift */,
 				C64F12C22CAD652300F02C87 /* SongsDataModel.swift */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C63A5A922C92447C004518D4 /* ListView.swift in Sources */,
+				C6429E3D2CBD98A800DFDE03 /* AverageColor.swift in Sources */,
 				C64F12BD2CAD5DBA00F02C87 /* SongCell.swift in Sources */,
 				C63CA72B2C8B286800E994E4 /* LibraryView.swift in Sources */,
 				C66291BA2C9E16640076277C /* RadioShowCell.swift in Sources */,
