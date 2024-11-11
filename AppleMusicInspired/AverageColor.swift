@@ -7,13 +7,13 @@
 
 import Foundation
 import SwiftUI
+import UIKit
 
 struct AverageColor {
     let averageColor: Color
 }
 
 extension AverageColor {
-
     static func generate(from image: UIImage) throws -> AverageColor {
             let baseColor = try getAverage(from: image)
             return AverageColor(averageColor: Color(uiColor: baseColor))

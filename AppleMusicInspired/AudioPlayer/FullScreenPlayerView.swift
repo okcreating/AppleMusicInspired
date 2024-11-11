@@ -6,18 +6,27 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct FullScreenPlayerView: View {
-    @State private var isPresenting = false
+
     let song: SongDetales
-    let color: AverageColor
+    @State private var player: AVAudioPlayer?
+    @State private var isPlaying = false
+    @State private var songTotalTime: TimeInterval = 0.0
+    @State private var songCurrentTime: TimeInterval = 0.0
+
+    @Binding var expandSheet: Bool
+    var animation: Namespace.ID
+    @State private var animationContent = false
+//    let color: AverageColor?
+
     var body: some View {
         ZStack {
-                AverageColor.generate(from: song.image.render()!).averageColor
-               // .ignoresSafeArea()
+
             VStack {
                 Spacer()
-                song.image
+                Image(uiImage: song.image)
                     .resizable()
                     .frame(width: 260, height: 260, alignment: .center)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
@@ -73,12 +82,51 @@ struct FullScreenPlayerView: View {
                 }
                 .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
                 Spacer()
-//                    .backgroundStyle(AverageColor.generate(from: song.image.render()!).averageColor)
+                   //.backgroundStyle(AverageColor.generate(from: song.image.render()!).averageColor)
             }
         }
+
+    }
+    private func setupAudio() {
+        guard let url = Bundle.main.url(forResource: song.name, withExtension: "mp3") else { return }
+        do {
+            player = try AVAudioPlayer(contentsOf: url )
+            player?.prepareToPlay()
+            songTotalTime = player?.duration ?? 0.0
+        } catch {
+            print("Loading error \(error)")
+        }
+    }
+
+    private func playAudio() {
+        player?.play()
+        isPlaying = true
+    }
+
+    private func stopPlaying() {
+        player?.pause()
+        isPlaying = false
+    }
+
+    private func updateProgress() {
+        guard let player = player else { return }
+        songCurrentTime = player.currentTime
+    }
+
+    private func seekAudio(to time: TimeInterval) {
+        player?.currentTime = time
+    }
+
+    private func timeStrirng(time: TimeInterval) -> String {
+        let minutes = Int(time) / 60
+        let seconds = Int(time) % 60
+return String(format: "%02d:%02d", minutes, seconds)
     }
 }
 
 #Preview {
-    FullScreenPlayerView(song: SongDetales.songsCollection()[.random(in: 0..<SongDetales.songsCollection().count)])
+    let randomSong = SongDetales.songsCollection()[.random(in: 0..<SongDetales.songsCollection().count)]
+
+    return FullScreenPlayerView(song: randomSong, expandSheet: .constant(true), animation: Namespace().wrappedValue)
+
 }
