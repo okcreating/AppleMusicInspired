@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import Observation
 
-enum CategoryName: String, CodingKey {
+enum CategoryName: String {
     case gold = "Gold Collection"
     case romantic = "Romantic"
     case releases = "Releases"
@@ -54,7 +55,7 @@ struct SongDetales: Hashable {
             SongDetales(image: Image("song12"), artist: "Kilo Thug", name: "Love Hip Hop", category: CategoryName.hiphop),
             SongDetales(image: Image("song13"), artist: "MANJ Musik", name: "Desi Hiphop", category: CategoryName.hiphop),
             SongDetales(image: Image("song14"), artist: "Paula Kiete", name: "Symphony", category: CategoryName.classic),
-            SongDetales(image: Image("song15"), artist: "Ludwig van Beethoven", name: "Piano Sonata No.14", category: CategoryName.classic),
+            SongDetales(image: Image("song15"), artist: "Ludwig van Beethoven", name: "Piano Sonata No.14", category: CategoryName.classic)
         ]
      }
 }

@@ -13,20 +13,24 @@ struct CategoryCell: View {
 
     var body: some View {
         ZStack(alignment: .bottomLeading) {
-            cell.image
-                .resizable()
-                .frame(width: .infinity/2.2, height: 140)
-                .cornerRadius(3)
-                .padding(.leading, 5)
-           Text(cell.name)
-                .foregroundStyle(.white)
-                .font(.title3)
-                .fontWeight(.bold)
-                .shadow(color: .black, radius: 1)
-                .padding(.leading)
-                .padding(.bottom, 7)
+                cell.image
+                    .resizable()
+                   // .scaledToFit()
+                    .frame(width: .infinity/2.2, height: 150)
+                    .cornerRadius(3)
+                    .padding(.leading, 5)
+                Text(cell.name)
+                    .foregroundStyle(.white)
+                    .font(.title3)
+                    .fontWeight(.bold)
+                    .shadow(color: .black, radius: 1)
+                    .padding(.leading)
+                   // .padding(.bottom, 7)
+            }
+
         }
+
     }
-}
+
 
 
