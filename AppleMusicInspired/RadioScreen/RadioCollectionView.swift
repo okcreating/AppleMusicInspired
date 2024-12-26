@@ -21,6 +21,7 @@ struct RadioCollectionView: View {
                 }
             }
         }
+
             Divider()
                  .padding()
             HStack(content: {
