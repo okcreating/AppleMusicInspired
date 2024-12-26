@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct CategoryDetailView: View {
+    let category: Category
+    let songs = SongDetales.songsCollection()
+    var filteredSongs = [SongDetales]()
+
+    mutating func filterSongs(category: CategoryName) -> [SongDetales] {
+        for song in songs {
+            if song.category == category {
+                filteredSongs.append(song)
+                return filteredSongs
+            }
+        }
+    }
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(filteredSongs) { content in
+                SongCell(cell: content)
+            }
+
+        }
     }
 }
 

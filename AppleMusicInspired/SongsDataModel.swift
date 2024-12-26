@@ -21,7 +21,7 @@ class CategoriesContent {
     var categories: [Category] = Category.categoriesPoints()
 }
 
-struct SongDetales: Hashable {
+struct SongDetales: Identifiable, Hashable {
      var id = UUID()
      var image: Image
      var artist: String
