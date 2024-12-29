@@ -10,7 +10,7 @@ import AVKit
 
 struct FullScreenPlayerView: View {
 
-    let song: SongDetales
+     var song: SongDetales
     @State private var player: AVAudioPlayer?
     @State private var isPlaying = false
     @State private var songTotalTime: TimeInterval = 0.0
@@ -19,7 +19,6 @@ struct FullScreenPlayerView: View {
     @Binding var expandSheet: Bool
     var animation: Namespace.ID
     @State private var animationContent = false
-    //    let color: AverageColor?
 
     var body: some View {
         GeometryReader {
@@ -66,67 +65,6 @@ struct FullScreenPlayerView: View {
         .onReceive(Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { _ in
             updateProgress()
         }
-
-        //            VStack {
-        //                Spacer()
-        //                song.image
-        //                    .resizable()
-        //                    .frame(width: 260, height: 260, alignment: .center)
-        //                    .clipShape(RoundedRectangle(cornerRadius: 10))
-        //
-        //                Spacer()
-        //                HStack {
-        //                    VStack(alignment: .leading) {
-        //                        Text(song.name)
-        //                            .fontWeight(.bold)
-        //                        Text(song.artist)
-        //                    }
-        //                    .font(.title)
-        //                    .padding()
-        //                    Spacer()
-        //                }
-        //                ProgressView(value: 0.3)
-        //                    .progressViewStyle(.linear)
-        //                    .padding(.leading)
-        //                    .padding(.trailing)
-        //                HStack {
-        //                    Text("0:00")
-        //                    Spacer()
-        //                    Text("3:24")
-        //                }
-        //                .padding(.leading)
-        //                .padding(.trailing)
-        //                .font(.system(size: 14))
-        //                Spacer()
-        //                HStack {
-        //                    Image(systemName: "backward.fill")
-        //                    Spacer()
-        //                    Image(systemName: "play.fill")
-        //                    Spacer()
-        //                    Image(systemName: "forward.fill")
-        //                }
-        //                .font(.system(size: 50))
-        //                .padding(30)
-        //
-        //                Spacer()
-        //                HStack {
-        //                    Image(systemName: "speaker.fill")
-        //                    ProgressView(value: 0.3)
-        //                    Image(systemName: "speaker.wave.3.fill")
-        //                }
-        //                .padding(.leading)
-        //                .padding(.trailing)
-        //
-        //
-        //                HStack {
-        //                    Image(systemName: "quote.bubble")
-        //                    Image(systemName: "airplay.audio.circle.fill")
-        //                    Image(systemName: "list.bullet.indent")
-        //                }
-        //                .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
-        //                Spacer()
-        //                   //.backgroundStyle(AverageColor.generate(from: song.image.render()!).averageColor)
-        //            }
     }
 
     private func setupAudio() {
@@ -273,6 +211,8 @@ struct FullScreenPlayerView: View {
                 }
                .frame(height: size.height / 2.5, alignment: .bottom)
             }
+        } .onTapGesture(count: 2) {
+            expandSheet = false
         }
     }
 }
@@ -283,3 +223,4 @@ struct FullScreenPlayerView: View {
     return FullScreenPlayerView(song: randomSong, expandSheet: .constant(true), animation: Namespace().wrappedValue)
 
 }
+
