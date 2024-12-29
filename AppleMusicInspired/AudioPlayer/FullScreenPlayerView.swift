@@ -210,10 +210,13 @@ struct FullScreenPlayerView: View {
                     .padding(.top, spacing)
                 }
                .frame(height: size.height / 2.5, alignment: .bottom)
-            }
-        } .onTapGesture(count: 2) {
-            expandSheet = false
+
         }
+
+        }
+        .onTapGesture(count: 2) {
+            expandSheet = false
+     }
     }
 }
 
