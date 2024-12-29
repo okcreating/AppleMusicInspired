@@ -8,11 +8,28 @@
 import SwiftUI
 
 struct CategoryDetailView: View {
+    var category: Category
+
+    @State private var expandSheet = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List {
+                ForEach(SongDetales.songsCollection().filter { $0.category.rawValue == category.name }) { content in
+                    SongCell(cell: content)
+                        .onTapGesture {
+                            expandSheet = true
+                        }
+                        .sheet(isPresented: $expandSheet) {
+                            FullScreenPlayerView(song: content, expandSheet: $expandSheet, animation: Namespace().wrappedValue)
+                        }
+                }
+                
+            }
+        }
     }
 }
 
-#Preview {
-    CategoryDetailView()
-}
+//#Preview {
+//    CategoryDetailView()
+//}

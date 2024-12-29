@@ -16,12 +16,12 @@ enum CategoryName: String {
     case classic = "Classic"
 }
 
-@Observable
-class CategoriesContent {
-    var categories: [Category] = Category.categoriesPoints()
-}
+//@Observable
+//class CategoriesContent {
+//    var categories: [Category] = Category.categoriesPoints()
+//}
 
-struct SongDetales: Hashable {
+struct SongDetales: Identifiable, Hashable {
      var id = UUID()
      var image: Image
      var artist: String
@@ -62,8 +62,8 @@ struct SongDetales: Hashable {
 
 struct Category: Hashable {
     let id = UUID()
-    var name: String
-    var image: Image
+   var name: String
+   var image: Image
 
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)

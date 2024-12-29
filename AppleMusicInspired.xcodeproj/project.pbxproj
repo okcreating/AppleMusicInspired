@@ -18,7 +18,6 @@
 		C63F60662C938E1200D6A29F /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C63F60652C938E1200D6A29F /* CellView.swift */; };
 		C6429E3D2CBD98A800DFDE03 /* AverageColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6429E3C2CBD98A800DFDE03 /* AverageColor.swift */; };
 		C6429E3F2CBDB10E00DFDE03 /* UIImage extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6429E3E2CBDB10E00DFDE03 /* UIImage extension.swift */; };
-		C6435FDC2CDBB6F30090DE94 /* AudioPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6435FDB2CDBB6F30090DE94 /* AudioPlayerViewModel.swift */; };
 		C64D22ED2CB7061F0048F3BD /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64D22EC2CB7061F0048F3BD /* CategoryDetailView.swift */; };
 		C64F12BB2CAD58F300F02C87 /* FullScreenPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F12BA2CAD58F300F02C87 /* FullScreenPlayerView.swift */; };
 		C64F12BD2CAD5DBA00F02C87 /* SongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C64F12BC2CAD5DBA00F02C87 /* SongCell.swift */; };
@@ -44,7 +43,6 @@
 		C63F60652C938E1200D6A29F /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		C6429E3C2CBD98A800DFDE03 /* AverageColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AverageColor.swift; sourceTree = "<group>"; };
 		C6429E3E2CBDB10E00DFDE03 /* UIImage extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage extension.swift"; sourceTree = "<group>"; };
-		C6435FDB2CDBB6F30090DE94 /* AudioPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerViewModel.swift; sourceTree = "<group>"; };
 		C64D22EC2CB7061F0048F3BD /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		C64F12BA2CAD58F300F02C87 /* FullScreenPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FullScreenPlayerView.swift; path = AppleMusicInspired/AudioPlayer/FullScreenPlayerView.swift; sourceTree = SOURCE_ROOT; };
 		C64F12BC2CAD5DBA00F02C87 /* SongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongCell.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				C64F12BA2CAD58F300F02C87 /* FullScreenPlayerView.swift */,
-				C6435FDB2CDBB6F30090DE94 /* AudioPlayerViewModel.swift */,
 			);
 			path = AudioPlayer;
 			sourceTree = "<group>";
@@ -235,7 +232,6 @@
 				C66291BC2C9E16940076277C /* RadioStationCell.swift in Sources */,
 				C6588A032CA0C08900E8FB28 /* RadioCollectionView.swift in Sources */,
 				C63A5A942C924DE2004518D4 /* PlayingView.swift in Sources */,
-				C6435FDC2CDBB6F30090DE94 /* AudioPlayerViewModel.swift in Sources */,
 				C63F60642C93772B00D6A29F /* ListDataModel.swift in Sources */,
 				C64F12BB2CAD58F300F02C87 /* FullScreenPlayerView.swift in Sources */,
 				C64F12BF2CAD63DC00F02C87 /* SearchView.swift in Sources */,
